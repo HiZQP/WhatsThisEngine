@@ -2,7 +2,7 @@
 
 #include "core.h"
 
-namespace WhatsThisEngine
+namespace WTE
 {
 	class WTE_API Application
 	{
@@ -13,4 +13,6 @@ namespace WhatsThisEngine
 
 		void Run();
 	};
+	// 在客户端代码中实现 CreateApplication 函数
+	Application* CreateApplication();
 }

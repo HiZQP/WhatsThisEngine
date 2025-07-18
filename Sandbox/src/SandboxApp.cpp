@@ -1,10 +1,19 @@
 #include <WhatsThisEngine.h>
 
-class SandboxApp : public WhatsThisEngine::Application
+class Sandbox : public WTE::Application
 {
+public:
+	Sandbox()
+	{
 
+	}
+	~Sandbox()
+	{
+
+	}
 };
 
-void main() {
-
+WTE::Application* WTE::CreateApplication()
+{
+	return new Sandbox();
 }

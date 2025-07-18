@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClInclude Include="src\What%27s this Engine\Application.h" />
     <ClInclude Include="src\What%27s this Engine\core.h" />
+    <ClInclude Include="src\What%27s this Engine\EntryPoint.h" />
     <ClInclude Include="src\WhatsThisEngine.h" />
   </ItemGroup>
   <ItemGroup>

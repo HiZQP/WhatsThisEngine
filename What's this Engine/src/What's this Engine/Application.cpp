@@ -1,6 +1,6 @@
 #include "Application.h"
 
-namespace WhatsThisEngine
+namespace WTE
 {
 	Application::Application()
 	{
