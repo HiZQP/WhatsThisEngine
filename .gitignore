@@ -365,3 +365,6 @@ FodyWeavers.xsd
 #Directories
 bin/
 bin-int/
+/WhatsThisEngine/WhatsThisEngine.vcxproj
+/WhatsThisEngine/WhatsThisEngine.vcxproj.filters
+/Sandbox/Sandbox.vcxproj
