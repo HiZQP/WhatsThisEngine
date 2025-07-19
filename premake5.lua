@@ -18,6 +18,9 @@ project "WhatsThisEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "hzpch.h"
+	pchsource "WhatsThisEngine/src/hzpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -26,7 +29,8 @@ project "WhatsThisEngine"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{wks.location}/WhatsThisEngine/vendor/spdlog/include",
+		"WhatsThisEngine/src"
 	}
 
 	filter "system:windows"
@@ -74,7 +78,7 @@ project "Sandbox"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include",
+		"%{wks.location}/WhatsThisEngine/vendor/spdlog/include",
 		"WhatsThisEngine/src",
 	}
 
